@@ -1,0 +1,13 @@
+<div>
+    <form *ngIf="flag">
+        <h2>Login</h2>
+        Username:<input type="text" name="username" [(ngModel)]="username"/><br>
+        Password:<input type="password" name="password" [(ngModel)]="password"/><br>
+        <button type="submit" name="btn" (click)="login()">Login</button>
+        <button type="button" name="cbtn" >Cancel</button>
+    </form>
+    
+</div>
+<div *ngIf="!flag">
+    <book></book>
+</div>

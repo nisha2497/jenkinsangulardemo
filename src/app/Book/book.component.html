@@ -1,0 +1,12 @@
+<div>
+    <form>
+        <h3>Book Details</h3>
+        Book Name:<input type="text" name="bname" [(ngModel)]="bname"/>
+        Book Contents:<textarea cols="2" rows="3" name="contents" [(ngModel)]="contents"></textarea>
+        <button type="button" name="btn" (click)="addBook()">Save</button>
+    </form>
+</div>
+
+<div>
+    <btable></btable>
+</div>
